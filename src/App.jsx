@@ -1,9 +1,12 @@
 import Header from './components/Header';
 import { ways } from './data';
 import WayToTeach from './components/WayToTeach';
-
+import Button from './components/Button/Button';
 
 export default function App() {
+
+	const onClick = () => console.log('btnClick')
+
 	return (
 		<div>
 			<Header />
@@ -16,6 +19,10 @@ export default function App() {
             ))}
 
 					</ul>
+
+					<Button onClick={onClick}>Подход</Button>
+					<Button onClick={onClick}>Доступность</Button>
+					<Button onClick={onClick}>Концентрация</Button>
 				</section>
 			</main>
 		</div>
