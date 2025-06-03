@@ -5,7 +5,12 @@ import Button from './components/Button/Button';
 
 export default function App() {
 
-	const onClick = () => console.log('btnClick')
+	let content = 'Нажми на кнопку';
+
+	function handleClick(type) {
+		console.log('btnClick', type)
+		content=type
+	} 
 
 	return (
 		<div>
@@ -20,11 +25,14 @@ export default function App() {
 
 					</ul>
 
-					<Button onClick={onClick}>Подход</Button>
-					<Button onClick={onClick}>Доступность</Button>
-					<Button onClick={onClick}>Концентрация</Button>
+					<Button onClick={( ) => handleClick('way')}>Подход</Button>
+					<Button onClick={handleClick('easy')}>Доступность</Button>
+					<Button onClick={handleClick('program')}>Концентрация</Button>
+
+					<p>{content}</p>
 				</section>
 			</main>
 		</div>
 	);
 }
+// 1.20
