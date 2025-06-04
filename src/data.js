@@ -14,5 +14,10 @@ export const ways = [
         description:
         'какое-то описание'
     },
-
 ]
+
+export const differens = {
+    way: 'Узконаправленный подход',
+    easy: 'Доступность обучения',
+    program: 'Концентрация знаний',
+}
