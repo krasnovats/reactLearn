@@ -49,11 +49,15 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #9ca1fa;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+button.active {
+  background-color: #0a25b9;
 }
 
 header {
@@ -74,7 +78,7 @@ li {
   background-color: azure;
 }
 
-ul {
+ul, ol {
   list-style: none; 
   padding: 0;
 }

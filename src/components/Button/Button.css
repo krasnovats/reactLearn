@@ -14,6 +14,6 @@
 }
 
 .button.active {
-    background: blueviolet;
+    background: rgb(2, 131, 116);
     color: #fff;
 }
